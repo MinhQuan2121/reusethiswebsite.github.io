@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/thinline.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header text-reveal" id="header">
+            <nav class="navbar__container container">
+                <a href="index.html" class="branding-logo"><img src="/assets/logo.svg" alt="" width="35" height="35">ReuseThis</a>
+                <div class="navbar__menu" id="navbar-menu">
+                    <ul class="navbar__list">
+                        <li class="active"><a href="#home" class="link">
+                            Trang chủ
+                        </a></li>
+                        <li class=""><a href="about.html" class="link">
+                            Giới thiệu
+                        </a></li>
+                        <li class=""><a href="#classify" class="link">
+                            Phân loại
+                        </a></li>
+                        <li class=""><a href="faq.html#faq" class="link">
+                            FAQ
+                        </a></li>
+                        <li class=""><a href="#news" class="link">
+                            Tin tức
+                        </a></li>
+                    </ul>
+                    <div class="navbar__close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+                <div class="navbar__open">
+                    <i class='bx bx-menu-alt-right'></i>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="home section" id="home">
+                <swiper-container class="home__image-wrapper mySwiper" navigation="true" pagination="true" loop="true" autoplay="true">
+                    <swiper-slide class="image" style="background: url(/assets/background/home\ \(1\).jpg); background-position: center center; background-size: cover;">
+                        <div class="">
+                            <p>
+                                "Cùng bảo vệ một Trái Đất Xanh"
+                            </p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="image" style="background: url(/assets/background/home\ \(2\).jpg); background-position: center center; background-size: cover;">
+                        <div class="">
+                            <p>
+                                "Cùng bảo vệ một Trái Đất Xanh"
+                            </p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="image" style="background: url(/assets/background/home\ \(3\).jpg); background-position: center center; background-size: cover;">
+                        <div class="">
+                            <p>
+                                "Cùng bảo vệ một Trái Đất Xanh"
+                            </p>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+                <div class="home__container">
+                    <div class="home__content">
+                        <h1 class="home__title">Hãy <span>bảo vệ môi trường</span><br>
+                            Bằng cách học cách tái chế rác!</h1>
+                        <p class="home__description">
+                            Khám phá các phương pháp tái chế sáng tạo, từ việc sử dụng lại vật liệu để tạo ra sản phẩm mới cho đến việc biến rác thành nguồn năng lượng.
+                        </p>
+                        <div class="home__action">
+                            <a href="javascript:delay('faq')" class="home__action-btn btn" id="btn">Tìm hiểu<ion-icon name="arrow-forward-outline"></ion-icon></a>
+                            <p>Hay</p>
+                            <a href="#about" class="home__action-btn btn" id="btn"><ion-icon name="play-outline"></ion-icon>Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="marquee">
+                <div class="marquee__container">
+                    <ul class="marquee__content">
+                        <li>Hãy bảo vệ môi trường</li>
+                        <li>Hãy bảo vệ môi trường</li>
+                        <li>Hãy bảo vệ môi trường</li>
+                    </ul>
+                    <ul class="marquee__content" aria-hidden="true">
+                        <li>Hãy bảo vệ môi trường</li>
+                        <li>Hãy bảo vệ môi trường</li>
+                        <li>Hãy bảo vệ môi trường</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="margin"></div>
+            <section class="about section" id="about">
+                <div class="about__container container">
+                    <div class="about__content">
+                        <article class="about__article text-align-center">
+                            <h1 class="article__title">Trang Web Tái Rác Thải ủng hộ người dùng tìm nhiều thông tin hữu tích.</h1>
+                            <a href="#about" class="article__btn btn btn-align-center" id="btn">Tìm hiểu</a>
+                            <ul class="about__accordion">
+                                <li class="accordion">
+                                    <label for="accordion1"><span><ion-icon name="trending-down"></ion-icon></span>Giảm thiểu lượng rác thải</label>
+                                    <input type="radio" name="accordion" id="accordion1" checked>
+                                    <div class="content">
+                                        <ul>
+                                            <li>
+                                                Trang web tái chế rác thải giúp người dùng hiểu rõ hơn về quá trình tái chế và cách sử dụng các sản phẩm tái chế.
+                                            </li>
+                                            <li>
+                                                Điều này khuyến khích người dùng phân loại và xử lý rác thải một cách bền vững giảm thiểu lượng rác thải được sinh ra.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="accordion">
+                                    <label for="accordion2"><span><ion-icon name="earth"></ion-icon></span>Bảo vệ môi trường</label>
+                                    <input type="radio" name="accordion" id="accordion2">
+                                    <div class="content">
+                                        <ul>
+                                            <li>
+                                                Tái chế rác thải giúp giảm lượng rác thải được đưa vào bãi rác và sử dụng tài nguyên tự nhiên một cách hiệu quả hơn. 
+                                            </li>
+                                            <li>
+                                                Việc tái chế cũng giảm thiểu ô nhiễm môi trường và tác động tiêu cực đến đất, nước và không khí.
+                                            </li>
+                                        </ul>
+                                    </div> 
+                                </li>
+                                <li class="accordion">
+                                    <label for="accordion3"><span><ion-icon name="color-fill"></ion-icon></span>Tiết kiệm năng lượng và tài nguyên</label>
+                                    <input type="radio" name="accordion" id="accordion3">
+                                    <div class="content">
+                                        <ul>
+                                            <li>
+                                                Tái chế rác thải giúp tiết kiệm năng lượng và tài nguyên vì nhà máy tái chế không phải sản xuất sản phẩm mới từ nguyên liệu nguyên thủy.
+                                            </li>
+                                            <li>
+                                                Như vậy, tái chế giúp giảm thiểu sự lãng phí tài nguyên và năng lượng mà sản xuất sản phẩm mới yêu cầu.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="accordion">
+                                    <label for="accordion4"><span><ion-icon name="create"></ion-icon></span>Tạo ra sản phẩm có tính bền vững</label>
+                                    <input type="radio" name="accordion" id="accordion4">
+                                    <div class="content">
+                                        <ul>
+                                            <li>
+                                                Tạo ra sản phẩm có tính bền vững: Trang web tái chế rác thải có thể giới thiệu cho người dùng các sản phẩm tái chế và các thương hiệu có tính bền vững.
+                                            </li>
+                                            <li>
+                                                Việc sử dụng các sản phẩm này thay vì các sản phẩm tiêu dùng thông thường giúp giảm thiểu tác động đến môi trường và đóng góp vào việc xây dựng một nền kinh tế xanh hơn.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </article>
+                        <div class="about__image-wrapper">
+                            <div class="about__image-placeholder">
+                                <img src="/assets/about-bg.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__image-wrapper-alt">
+                        <div class="about__image-placeholder">
+                            <img src="/assets/about-bg.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="margin"></div>
+            <section class="model section" id="model">
+                <div class="model__container container" id="model">
+                    <h1 class="model__title section-title">Mô hình tái chế</h1>
+                    <p class="model__description section-description">Quá trình chuyển đổi các sản phẩm đã qua sử dụng hoặc bị vứt bỏ thành các sản phẩm mới có giá trị sử dụng cao hơn.</p>
+                    <div class="model__content">
+                        <div class="model__grid-wrapper dotted-dot" style="position: relative;">
+                            <div class="model__grid">
+                                <h3 class="grid-icon">
+                                    <ion-icon name="list-outline"></ion-icon>
+                                </h3>
+                                <h1 class="grid-title">
+                                    Thu thập
+                                </h1>
+                                <p class="grid-description description">
+                                    Bước đầu tiên là thu thập các loại rác thải khác nhau từ các nguồn khác nhau, bao gồm cả các loại rác thải sinh hoạt và công nghiệp.
+                                </p>
+                            </div>
+                            <div class="model__grid">
+                                <h3 class="grid-icon">
+                                    <ion-icon name="clipboard-outline"></ion-icon>
+                                </h3>
+                                <h1 class="grid-title">
+                                    Phân loại
+                                </h1>
+                                <p class="grid-description description">
+                                    Sau khi đã thu thập được các vật liệu tái chế, phân loại chúng theo loại, kích thước và tính chất khác nhau là rất quan trọng để có thể xử lí một cách hiệu quả.
+                                </p>
+                            </div>
+                            <div class="model__grid">
+                                <h3 class="grid-icon">
+                                    <ion-icon name="settings-outline"></ion-icon>
+                                </h3>
+                                <h1 class="grid-title">
+                                    Xử lí
+                                </h1>
+                                <p class="grid-description description">
+                                    Sau khi đã phân loại các vật liệu tái chế sẽ được xử lý để loại bỏ bất kỳ tạp chất nào và chuẩn bị cho giai đoạn tái sử dụng.
+                                </p>
+                            </div>
+                            <div class="model__grid">
+                                <h3 class="grid-icon">
+                                    <ion-icon name="reload-outline"></ion-icon>
+                                </h3>
+                                <h1 class="grid-title">
+                                    Tái sử dụng
+                                </h1>
+                                <p class="grid-description description">
+                                    Sau khi đã qua giai đoạn xử lý, các vật liệu tái chế tạo ra các sản phẩm mới mà không cần sử dụng tài nguyên mới. Giúp giảm lượng rác thải và bảo vệ môi trường.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="margin"></div>
+            <section class="stats section" id="stats">
+                <div class="stats__container container">
+                    <h1 class="stats__title">Số liệu thống kê về rác thải trên toàn cầu.</h1>
+                    <div class="stats__content">
+                        <div class="col">
+                            <h3 class="stats__number">
+                                2,01TỶ+
+                            </h3>
+                            <p class="stats__description">
+                                Mỗi năm, số tấn rác thải được sản xuất khoảng:
+                            </p>
+                        </div>
+                        <div class="col">
+                            <h3 class="stats__number">
+                                3,5TR+
+                            </h3>
+                            <p class="stats__description">
+                                Mỗi ngày, số tấn rác thải được sản xuất khoảng:
+                            </p>
+                        </div>
+                        <div class="col">
+                            <h3 class="stats__number">
+                                4,9TỈ+
+                            </h3>
+                            <p class="stats__description">
+                                Năm 2016 ghi nhận kỉ lục số tấn rác thải cao nhất:
+                            </p>
+                        </div>
+                        <div class="col">
+                            <h3 class="stats__number">
+                                ~9%
+                            </h3>
+                            <p class="stats__description">
+                                Tính đến năm 2020, các loại rác được tái chế trên toàn cầu chỉ có khoảng:
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="classify section" id="classify">
+                <div class="classify__container container">
+                    <h1 class="classify__title section-title">Phân loại rác thải</h1>
+                    <p class="classify__description section-description">Phân loại và hướng dẫn tái chế.</p>
+                    <div class="classify__grid-container">
+                        <div class="classify__grid-item d-flex_fd-col_jc-sb">
+                            <h3 class="classify__grid-header">Kim loại</h3>
+                            <div class="classify__grid-body">
+                                <p class="classify__grid-body-description">Lồng đèn, bình xịt côn trùng, vỏ máy tính, vỏ điện thoại.</p>
+                                <button class="classify__grid-item-btn btn" id="open">Xem thêm<i class="uil uil-arrow-up-right"></i></button>
+                            </div>
+                            <div class="classify__modal-container">
+                                <div class="classify__modal"> <!-- Modal -->
+                                    <div class="classify__modal-header">
+                                        <h3 class="modal__title">Kim loại</h3>
+                                        <button class="modal__closeBtn" id="close"><ion-icon name="close-outline"></ion-icon></button>
+                                    </div>
+                                    <div class="classify__modal-body">
+                                        Vấn đề: Khối lượng kim loại bị vứt bỏ hàng năm trên toàn cầu là rất lớn, gây ô nhiễm môi trường và lãng phí tài nguyên thiên nhiên. 
+                                        <br>
+                                        Các bước tái chế:
+                                        <ul>
+                                            <li>
+                                                Thu gom, phân loại và xử lý kim loại từ các sản phẩm đã qua sử dụng hoặc bị hỏng.
+                                            </li>
+                                            <li>
+                                                Tách các hợp kim khác nhau và loại bỏ bất kỳ chất lỏng hay chất độc hại nào.
+                                            </li>
+                                            <li>
+                                                Nghiền và chia thành các mảnh nhỏ hơn để tiện thể transport.
+                                            </li>
+                                            <li>
+                                                Thực hiện quá trình nung nóng, luyện kim hoặc tuần hoàn để sản xuất ra kim loại mới.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="classify__grid-item d-flex_fd-col_jc-sb">
+                            <h3 class="classify__grid-header">Nhựa</h3>
+                            <div class="classify__grid-body">
+                                <p class="classify__grid-body-description">Chai nước suối, túi nilon, đồ chơi trẻ em, ống hút.</p>
+                                <button class="classify__grid-item-btn btn" id="open">Xem thêm<i class="uil uil-arrow-up-right"></i></button>
+                            </div>
+                            <div class="classify__modal-container">
+                                <div class="classify__modal"> <!-- Modal -->
+                                    <div class="classify__modal-header">
+                                        <h3 class="modal__title">Nhựa</h3>
+                                        <button class="modal__closeBtn" id="close"><ion-icon name="close-outline"></ion-icon></button>
+                                    </div>
+                                    <div class="classify__modal-body">
+                                        Vấn đề: Sự phát triển nhanh chóng của ngành công nghiệp nhựa đã gây ra nhiều vấn đề cho môi trường, như làm ô nhiễm không khí và ảnh hưởng đến sức khỏe con người.
+                                        <br>
+                                        Các bước tái chế:
+                                        <ul>
+                                            <li>
+                                                Thu gom, phân loại nhựa từ các sản phẩm đã qua sử dụng hoặc bị hỏng.
+                                            </li>
+                                            <li>
+                                                Phân loại theo loại nhựa, ví dụ PET, HDPE, PVC, PP, PS, v.v...
+                                            </li>
+                                            <li>
+                                                Xử lý nhựa để tách riêng các polymers khác nhau.
+                                            </li>
+                                            <li>
+                                                Sử dụng các polymers đã được tách để sản xuất ra các sản phẩm nhựa mới.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="classify__grid-item d-flex_fd-col_jc-sb">
+                            <h3 class="classify__grid-header">Giấy</h3>
+                            <div class="classify__grid-body">
+                                <p class="classify__grid-body-description">Hộp giày, hộp carton, sách cũ, giấy viết.</p>
+                                <button class="classify__grid-item-btn btn" id="open">Xem thêm<i class="uil uil-arrow-up-right"></i></button>
+                            </div>
+                            <div class="classify__modal-container">
+                                <div class="classify__modal"> <!-- Modal -->
+                                    <div class="classify__modal-header">
+                                        <h3 class="modal__title">Giấy</h3>
+                                        <button class="modal__closeBtn" id="close"><ion-icon name="close-outline"></ion-icon></button>
+                                    </div>
+                                    <div class="classify__modal-body">
+                                        Vấn đề: Với số lượng lớn giấy được tiêu thụ hàng ngày, việc vứt bỏ giấy sẽ làm tăng lượng rác thải và gây lãng phí tài nguyên.
+                                        <br>
+                                        Các bước tái chế:
+                                        <ul>
+                                            <li>
+                                                Thu gom, phân loại và xử lý giấy từ các sản phẩm đã qua sử dụng hoặc bị hỏng.                                                
+                                            </li>
+                                            <li>
+                                                Sử dụng các chất xử lý để loại bỏ bất kỳ mực in hay các chất hóa học nào, sau đó nghiền giấy thành bột giấy.
+                                            </li>
+                                            <li>
+                                                Cho bột giấy vào máy ép để sản xuất ra các tấm giấy mới.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="classify__grid-item d-flex_fd-col_jc-sb">
+                            <h3 class="classify__grid-header">Đồ ăn thừa</h3>
+                            <div class="classify__grid-body">
+                                <p class="classify__grid-body-description">Các món ăn thừa như cơm, rau củ quả, thịt, trái cây.</p>
+                                <button class="classify__grid-item-btn btn" id="open">Xem thêm<i class="uil uil-arrow-up-right"></i></button>
+                            </div>
+                            <div class="classify__modal-container">
+                                <div class="classify__modal"> <!-- Modal -->
+                                    <div class="classify__modal-header">
+                                        <h3 class="modal__title">Đồ ăn thừa</h3>
+                                        <button class="modal__closeBtn" id="close"><ion-icon name="close-outline"></ion-icon></button>
+                                    </div>
+                                    <div class="classify__modal-body">
+                                        Vấn đề: Đồ ăn thừa sau khi bị vứt bỏ sẽ phân hủy và sinh ra khí methane độc hại cho môi trường.
+                                        <br>
+                                        Các bước tái chế:
+                                        <ul>
+                                            <li>
+                                                Sử dụng các hệ thống xử lý hữu cơ hoặc phương pháp phân hủy bằng vi sinh vật để biến đổi đồ ăn thừa thành phân bón hữu cơ. 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="classify__grid-item d-flex_fd-col_jc-sb">
+                            <h3 class="classify__grid-header">Thủy tinh</h3>
+                            <div class="classify__grid-body">
+                                <p class="classify__grid-body-description">Chai rượu vang, cốc thủy tinh, đèn lồng.</p>
+                                <button class="classify__grid-item-btn btn" id="open">Xem thêm<i class="uil uil-arrow-up-right"></i></button>
+                            </div>
+                            <div class="classify__modal-container">
+                                <div class="classify__modal"> <!-- Modal -->
+                                    <div class="classify__modal-header">
+                                        <h3 class="modal__title">Thủy tinh</h3>
+                                        <button class="modal__closeBtn" id="close"><ion-icon name="close-outline"></ion-icon></button>
+                                    </div>
+                                    <div class="classify__modal-body">
+                                        Vấn đề: Khối lượng kim loại bị vứt bỏ hàng năm trên toàn cầu là rất lớn, gây ô nhiễm môi trường và lãng phí tài nguyên thiên nhiên. 
+                                        <br>
+                                        Các bước tái chế:
+                                        <ul>
+                                            <li>
+                                                Thu gom, phân loại thủy tinh từ các sản phẩm đã qua sử dụng hoặc bị hỏng.
+                                            </li>
+                                            <li>
+                                                Nghiền thủy tinh thành các mảnh nhỏ hơn.
+                                            </li>
+                                            <li>
+                                                Hòa tan thủy tinh trong soda ash (muối natri carbonate), sau đó thu hồi lại các thành phần để sản xuất thủy tinh mới.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="classify__grid-item d-flex_fd-col_jc-sb">
+                            <h3 class="classify__grid-header">Pin</h3>
+                            <div class="classify__grid-body">
+                                <p class="classify__grid-body-description">Pin điện thoại, pin máy tính, pin ô tô.</p>
+                                <button class="classify__grid-item-btn btn" id="open">Xem thêm<i class="uil uil-arrow-up-right"></i></button>
+                            </div>
+                            <div class="classify__modal-container">
+                                <div class="classify__modal"> <!-- Modal -->
+                                    <div class="classify__modal-header">
+                                        <h3 class="modal__title">Pin</h3>
+                                        <button class="modal__closeBtn" id="close"><ion-icon name="close-outline"></ion-icon></button>
+                                    </div>
+                                    <div class="classify__modal-body">
+                                        Vấn đề: Pin chứa nhiều chất độc hại, gây ô nhiễm môi trường nếu bị vứt bỏ không đúng cách.
+                                        <br>
+                                        Các bước tái chế:
+                                        <ul>
+                                            <li>
+                                                Thu gom và phân loại các thành phần của pin, bao gồm kim loại và các chất hóa học độc hại.
+                                            </li>
+                                            <li>
+                                                Xử lý và tái chế kim loại bằng các phương pháp tương tự như tái chế kim loại từ các sản phẩm khác.
+                                            </li>
+                                            <li>
+                                                Thực hiện quá trình xử lý các chất hóa học độc hại trong pin để tránh ô nhiễm môi trường. Các phương pháp có thể bao gồm sử dụng hệ thống xử lý nước hoặc các biện pháp khác để loại bỏ các chất hóa học độc hại.
+                                            </li>
+                                            <li>
+                                                Sử dụng các thành phần đã được tái chế để sản xuất ra các sản phẩm mới. Ví dụ, kim loại tái chế có thể được sử dụng để sản xuất các linh kiện điện tử mới, trong khi chất hóa học đã được loại bỏ có thể được tiêu hủy an toàn.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="margin"></div>
+            <section class="product section" id="product">
+                <div class="product__container container">
+                    <h1 class="product__title section-title">Sản phẩm tái chế</h1>
+                    <p class="product__description section-description">Mô tả.</p>
+                    <div class="product__grid-container">
+                        <div class="product__grid-row">
+                            <div class="col d-flex_fd-col_jc-sb">
+                                <div class="col__header">
+                                    <h1>
+                                        <div class="col__bullet">1</div>
+                                        <b class="col__title">Tái chế bằng vật liệu nhựa</b>
+                                    </h1>
+                                    <p class="grid__paragraph description">Lợi ích kinh tế: giảm chi phí sản xuất và tiết kiệm tài nguyên thiên nhiên. <br>
+                                        Lợi ích môi trường: giảm lượng rác thải nhựa, giảm ô nhiễm môi trường và giảm sự suy thoái tầng ozon, giảm khí thải CO2 từ sản xuất mới.</p>
+                                </div>
+                                <div class="col__article">
+                                    <button class="grid__btn btn">Tìm hiểu<ion-icon name="arrow-forward-outline"></ion-icon></button>
+                                </div>
+                            </div>
+                            <div class="col col__image-wrapper">
+                                <div class="product__shadow-placeholder">
+                                    <img src="https://i.ytimg.com/vi/YZ8PnpMs3J4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBee_CjayJAYBXRiW1OMYO8_8-hbQ" alt="" class="product__col-image">
+                                    <a href="https://www.youtube.com/watch?v=YZ8PnpMs3J4" class="product__col-image-btn"><ion-icon name="play-outline"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__grid-row row-reverse">
+                            <div class="col d-flex_fd-col_jc-sb">
+                                <div class="col__header">
+                                    <h1>
+                                        <div class="col__bullet">2</div>
+                                        <b class="col__title">Tái chế bằng vật liệu giấy</b>
+                                    </h1>
+                                    <p class="grid__paragraph description">Lợi ích kinh tế: giảm chi phí sản xuất và tiết kiệm tài nguyên thiên nhiên. <br>
+                                        Lợi ích môi trường: giảm lượng rác thải giấy, giảm sự tàn phá rừng và giảm khí thải CO2 từ sản xuất mới.</p>
+                                </div>
+                                <div class="col__article">
+                                    <button class="grid__btn btn">Tìm hiểu<ion-icon name="arrow-forward-outline"></ion-icon></button>
+                                </div>
+                            </div>
+                            <div class="col col__image-wrapper">
+                                <div class="product__shadow-placeholder">
+                                    <img src="https://i.ytimg.com/vi/AiSHtkeQSuk/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC4eJQAVTyyE30-hGD7Tr3-lR8fog" alt="" class="product__col-image">
+                                    <a href="https://www.youtube.com/watch?v=AiSHtkeQSuk&pp=ygUgaMaw4bubbmcgZOG6q24gdMOhaSBjaOG6vyBnaeG6pXk%3D" class="product__col-image-btn"><ion-icon name="play-outline"></ion-icon></a>
+                                </div>
+                            </div>
+                            <div class="col d-flex_fd-col_jc-sb">
+                                <div class="col__header">
+                                    <h1>
+                                        <div class="col__bullet">2</div>
+                                        <b class="col__title">Tái chế bằng vật liệu giấy</b>
+                                    </h1>
+                                    <p class="grid__paragraph description">Lợi ích kinh tế: giảm chi phí sản xuất và tiết kiệm tài nguyên thiên nhiên. <br>
+                                        Lợi ích môi trường: giảm lượng rác thải giấy, giảm sự tàn phá rừng và giảm khí thải CO2 từ sản xuất mới.</p>
+                                </div>
+                                <div class="col__article">
+                                    <button class="grid__btn btn">Tìm hiểu<ion-icon name="arrow-forward-outline"></ion-icon></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__grid-row">
+                            <div class="col d-flex_fd-col_jc-sb">
+                                <div class="col__header">
+                                    <h1>
+                                        <div class="col__bullet">3</div>
+                                        <b class="col__title">Tái chế bằng vật liệu thủy tinh</b>
+                                    </h1>
+                                    <p class="grid__paragraph description">Lợi ích kinh tế: giảm chi phí sản xuất mới và tiết kiệm tài nguyên thiên nhiên. <br>
+                                        Lợi ích môi trường: giảm lượng rác thải thủy tinh, giảm ô nhiễm môi trường và giảm khí thải CO2 từ sản xuất mới.</p>
+                                </div>
+                                <div class="col__article">
+                                    <button class="grid__btn btn">Tìm hiểu<ion-icon name="arrow-forward-outline"></ion-icon></button>
+                                </div>
+                            </div>
+                            <div class="col col__image-wrapper">
+                                <div class="product__shadow-placeholder">
+                                    <img src="https://i.ytimg.com/vi/5Ugb03973W8/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgTIFQofzAP&rs=AOn4CLD05_jkpnwm3lqkuxXcLcLgWStj9A" alt="" class="product__col-image">
+                                    <a href="https://www.youtube.com/watch?v=5Ugb03973W8&pp=ygUwaMaw4bubbmcgZOG6q24gdMOhaSBjaOG6vyBs4bqhaSBjaGFpIHRo4buneSB0aW5o" class="product__col-image-btn"><ion-icon name="play-outline"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="margin"></div>
+            <section class="faq section" id="">
+                <div class="faq__container container">
+                    <div class="faq__content">
+                        <div class="faq__article text-align-center">
+                            <h1 class="article__title">FAQs - Hỏi đáp</h1>
+                            <p class="article__description description text-align-center-alt">Trang FAQ này sẽ giải đáp những câu hỏi thường gặp về tái chế rác thải để giúp bạn hiểu rõ hơn về quá trình tái chế và cách thực hiện nó.</p>
+                            <a href="faq.html"><button class="article__btn btn btn-align-center"><ion-icon name="caret-forward-outline"></ion-icon>Tìm hiểu</button></a>
+                        </div>
+                        <div class="faq__image-wrapper">
+                            <div class="faq__image-placeholder">
+                                <img src="/assets/faq.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="margin"></div>
+            <section class="video section" id="video">
+                <div class="video__container container">
+                    <h1 class="video__title section-title">Video</h1>
+                    <p class="video__description section-description">Thông điệp.</p>
+                    <div class="video__wrapper shadow-wrapper">
+                        <div class="video__wrapper-placeholder shadow-placeholder">
+                            <video controls>
+                                <source src="/assets/video/videomp4.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="margin"></div>
+            <section class="news section" id="news">
+                <div class="news__container container">
+                    <h1 class="news__title section-title">Tin tức</h1>
+                    <p class="news__description section-description">Mô tả.</p>
+                    <div class="news__grid-container">
+                        <div class="news__grid box box1 d-flex_fd-col_jc-sb" style="background: url(https://image.nhandan.vn/350x234/Files/Images/2022/03/05/unea_2-1646473868309.jpeg); background-size: cover; background-position: center;">
+                            <h2>
+                                UNEA thông qua 14 nghị quyết nhằm bảo vệ và phục hồi thiên nhiên
+                            </h2>
+                            <article class="news__article">
+                                <p class="article__description description-light">Tại kỳ họp lần thứ 5 vừa kết thúc mới đây, Hội đồng Môi trường Liên hợp quốc (UNEA) đã thông qua 14 nghị quyết nhằm tăng cường hành động vì thiên nhiên để đạt được các Mục tiêu Phát triển Bền vững (SDGs).</p>
+                                <a href="https://nhandan.vn/unea-thong-qua-14-nghi-quyet-nham-bao-ve-va-phuc-hoi-thien-nhien-post688099.html" class="article__btn btn" style="padding: 5px 10px;" target="_blank">Tìm hiểu</a>
+                            </article>
+                        </div>
+                        <div class="news__grid box box2 d-flex_fd-col_jc-sb" style="background: url(https://image.nhandan.vn/350x234/Files/Images/2022/02/28/rac_nhua-1646066299564.jpg); background-size: cover; background-position: center;">
+                            <h2>
+                                Khai mạc kỳ họp Hội đồng Môi trường Liên hợp quốc
+                            </h2>
+                            <article class="news__article">
+                                <p class="article__description description-light">Ngày 28/2, kỳ họp lần thứ 5 tiếp nối của Hội đồng Môi trường Liên hợp quốc (UNEA-5.2) đã chính thức khai mạc tại Nairobi, Kenya với sự tham gia của các bộ trưởng môi trường và đại diện từ hơn 150 quốc gia và vùng lãnh thổ.</p>
+                                <a href="https://nhandan.vn/khai-mac-ky-hop-hoi-dong-moi-truong-lien-hop-quoc-post687442.html" class="article__btn btn" style="padding: 5px 10px;" target="_blank">Tìm hiểu</a>
+                            </article>
+                        </div>
+                        <div class="news__grid box box3 d-flex_fd-col_jc-sb" style="background: url(https://image.nhandan.vn/350x234/Files/Images/2022/02/22/rac_thai_nhua_2-1645516789671.jpg); background-size: cover; background-position: center;">
+                            <h2>
+                                Khảo sát toàn cầu: 75% người dân ủng hộ cấm đồ nhựa dùng 1 lần
+                            </h2>
+                            <article class="news__article">
+                                <p class="article__description description-light">Một cuộc thăm dò mới đây cho thấy cứ 4 người trên thế giới thì có 3 người ủng hộ việc cấm sử dụng đồ nhựa dùng 1 lần sớm nhất có thể.</p>
+                                <a href="https://nhandan.vn/khao-sat-toan-cau-75-nguoi-dan-ung-ho-cam-do-nhua-dung-1-lan-post686589.html" class="article__btn btn" style="padding: 5px 10px;" target="_blank">Tìm hiểu</a>
+                            </article>
+                        </div>
+                        <div class="news__grid box box4 d-flex_fd-col_jc-sb" style="background: url(https://image.nhandan.vn/350x234/Files/Images/2022/02/21/rac_thai_nhua-1645459937585.jpg); background-size: cover; background-position: center;">
+                            <h2>
+                                Kỳ vọng một hiệp ước toàn cầu nhằm kiểm soát ô nhiễm rác thải nhựa
+                            </h2>
+                            <article class="news__article">
+                                <p class="article__description description-light">Hơn 100 quốc gia thành viên của Liên hợp quốc sẽ nhóm họp vào cuối tháng này để thảo luận bộ khung tổng thể cho thỏa thuận toàn cầu đầu tiên về giải quyết vấn đề ô nhiễm rác thải nhựa. Theo Liên hợp quốc, đây có thể sẽ là hiệp ước toàn cầu quan trọ nhất kể từ sau Thỏa thuận Paris năm 2015.</p>
+                                <a href="https://nhandan.vn/khao-sat-toan-cau-75-nguoi-dan-ung-ho-cam-do-nhua-dung-1-lan-post686589.html" class="article__btn btn" style="padding: 5px 10px;" target="_blank">Tìm hiểu</a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="margin"></div>
+            <section class="share section" id="share">
+                <div class="share__container container">
+                    <div class="share__content">
+                        <div class="share__article text-align-center">
+                            <h1 class="article__title section-title">Chia sẻ kiến thức và kinh nghiệm về tái chế rác thải</h1>
+                            <p class="article__description text-align-center-alt">Chúng tôi hy vọng cộng đồng sẽ cùng nhau đóng góp vào việc giảm thiểu lượng rác thải và xây dựng một môi trường sống bền vững cho tương lai. Hãy tham gia và chia sẻ kiến thức của bạn với cộng đồng!</p>
+                        </div>
+                        <div class="share__social">
+                            <a href="http://facebook.com/" class="share__social-btn social-btn" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="https://www.instagram.com/" class="share__social-btn social-btn" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href="https://twitter.com/" class="share__social-btn social-btn" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="https://reddit.com/" class="share__social-btn social-btn" target="_blank"><ion-icon name="logo-reddit"></ion-icon></a>
+                            <a href="https://discord.com/app" class="share__social-btn social-btn" target="_blank"><ion-icon name="logo-discord"></ion-icon></a>
+                        </div>
+                        <div class="share__clipboard">
+                            <div class="copy-clipboard">
+                                <input type="text" class="clipboard" value="https://website.com">
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="row">
+                    <a href="index.html" class="branding-logo"><img src="/assets/logo.svg" alt="" width="35" height="35">ReuseThis</a>
+                    <div class="footer__menu" id="navbar-menu">
+                        <ul class="navbar__list">
+                            <li><a href="#home" class="link">
+                                Trang chủ
+                            </a></li>
+                            <li><a href="about.html" class="link">
+                                Giới thiệu
+                            </a></li>
+                            <li><a href="#classify" class="link">
+                                Phân loại
+                            </a></li>
+                            <li><a href="faq.html#faq" class="link">
+                                FAQ
+                            </a></li>
+                            <li><a href="#news" class="link">
+                                Tin tức
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="copyright">
+                        Copyright <span>&copy;</span> 2023 Portfolio. All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script type="text/javascript">
+        function delay (about) {
+            setTimeout( function() { window.location = "about.html" }, 500 );
+        };
+    </script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/home.js"></script>
+    <script src="/js/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="https://unicons.iconscout.com/release/v4.0.8/script/monochrome/bundle.js"></script>
+    <script src="https://kit.fontawesome.com/a621dab346.js" crossorigin="anonymous"></script>
+</body>
+</html>
